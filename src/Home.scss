@@ -1,0 +1,32 @@
+// src/Home.scss
+
+$background-color: #f8f9fa;
+$text-color: #343a40;
+$link-color: #007bff;
+$link-hover-color: #0056b3;
+$padding: 20px;
+$margin: 20px;
+
+.home-container {
+  background-color: $background-color;
+  color: $text-color;
+  padding: $padding;
+  border-radius: 4px;
+  text-align: center;
+  
+  h2 {
+    margin-bottom: $margin;
+  }
+
+  a {
+    color: $link-color;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
+}

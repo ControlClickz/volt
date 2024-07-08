@@ -1,0 +1,93 @@
+// src/Cadastro.scss
+
+$background-color: #2D3748;
+$border-color: #ccc;
+$primary-color: #38B267;
+$primary-color-hover: #319657;
+$secondary-color: #C53030;
+$secondary-color-hover: #a12424;
+$text-color: #ffffff;
+$font-size: 16px;
+$padding: 30px;
+$margin-bottom: 15px;
+
+
+
+
+.cadastro-container {
+  
+  max-width: 600px; /* Aumentei o max-width para acomodar os inputs lado a lado */
+  margin: 0 auto;
+  padding: $padding;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  background-color: $background-color;
+  color: $text-color;
+
+  h2 {
+    text-align: center;
+    margin-bottom: $margin-bottom;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    .form-group {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: $margin-bottom;
+
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        width: 48%; /* Ajusta a largura dos inputs para caberem lado a lado */
+
+        label {
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"] {
+          padding: 8px;
+          border: 1px solid $border-color;
+          border-radius: 4px;
+          font-size: $font-size;
+        }
+      }
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      padding: auto;
+      margin-top: 25px;
+
+      button {
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: $primary-color;
+        color: $text-color;
+        border: none;
+        border-radius: 4px;
+        font-size: $font-size;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: $primary-color-hover;
+        }
+      }
+
+      .back-button {
+        background-color: $secondary-color;
+        &:hover {
+          background-color: $secondary-color-hover;
+        }
+      }
+    }
+  }
+}
