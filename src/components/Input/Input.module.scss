@@ -1,0 +1,52 @@
+.container {
+    position: relative;
+
+    .label {
+        color: #C8C8C8;
+        position: absolute;
+        top: 50%;
+        left: 0.75rem;
+        transform: translateY(-50%);
+        font-size: 0.75rem;
+        background: linear-gradient(to bottom, transparent 50%, #ffffff 60%, transparent 100%);
+        padding: 0 5px;
+        text-align: center;
+        text-transform: capitalize;
+        transition: all 0.3s ease;
+        pointer-events: none;
+        word-spacing: 0.15rem;
+    }
+
+    .input {
+        width: 100%;
+        border-radius: 8px;
+        outline: none;
+        border: 2px solid #C8C8C8;
+        padding: 6px;
+        color: #9B9B9B;
+    }
+
+    .label.activeFocus,
+    .label.active {
+        top: -0.01rem;
+        left: 0.75rem;
+        padding: 0 0.25rem;
+        font-weight: bold;
+    }
+
+    .label.active {
+        color: #898989;
+    }
+
+    .label.activeFocus {
+        color: #ED8936;
+    }
+
+    .input.active {
+        border-color: #898989;
+    }
+
+    .input.activeFocus {
+        border-color: #ED8936;
+    }
+}

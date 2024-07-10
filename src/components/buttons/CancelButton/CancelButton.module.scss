@@ -1,0 +1,18 @@
+.CancelButton {
+    background-color: #C53030;
+    border: 2px solid #9F2727;
+    border-radius: 8px;
+    padding: 0.5rem 1.8rem;
+    outline: none;
+    color: #fff;
+
+    &:hover {
+        background-color: #9F2727;
+        border-color: #7f1f1f;
+    }
+
+    &:active {
+        background-color: #7f1f1f;
+        border-color: #661919;
+    }
+}
